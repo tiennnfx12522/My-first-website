@@ -1,0 +1,149 @@
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+* {
+  margin:0;
+  padding:0;  
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+
+/* Style the search field */
+form.searchbar input[type=text] {
+  padding: 8.5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  height: 50%;
+  background: white;}
+  
+/* Style the submit button */
+form.searchbar button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: none;
+  color: black;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#nav {height: 90px;}
+
+
+nav div a img {
+  height: 90px;
+}
+
+form {
+  padding-top: 0%;
+}
+
+li a {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+} 
+
+.display-4 {
+  font-size: 5.7vw;
+    }
+
+#jumbotron p {
+  font-size: 2.8vw;
+}
+
+#jumbotron a {
+  font-size: 2.8vw;
+}
+
+#highlight {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.social a {
+	font-size: 3em;/*1em = 16px*/
+	padding: 3rem;/*1rem = 1 "font-size" */
+}
+.fa-facebook {
+	color: #3b5998;
+}
+.fa-twitter {
+	color: #00aced;	
+}
+
+.fa-instagram {
+	color: #517fa4;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.About-us {
+  display: grid;
+  flex-direction: column;
+}
+
+.About-us a {
+  text-decoration: none;
+  color: grey;
+}
+
+@media (min-width: 768px){
+  .display-4 {
+    font-size: 6vw;}
+}
+
+@media (min-width: 992px){
+  #jumbotron {
+    padding: 2% 10%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;}
+
+   #jumbotron .btn {
+     margin-top: 0;
+   } 
+
+  .display-4 {
+    font-size: 4vw;
+    font-weight: bold;}  
+
+  #jumbotron p {
+    font-size: 1.5vw;}
+
+  #jumbotron a {
+    font-size: 1.5vw;}
+}  
